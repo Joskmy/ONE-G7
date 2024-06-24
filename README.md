@@ -14,3 +14,11 @@ En estas carpetas encontrarás el proyecto **Juego de Adivinar el Número en Jav
 - Pistas interactivas para guiar al jugador.
 - Límite de intentos para aumentar el desafío.
 - Varias actividades adicionales implementadas durante el curso.
+
+### Carpetas
+
+4. **cursoHTML**
+
+### Contenido
+
+En esta carpeta encontrarás el proyecto **Portafolio**. Este es un proyecto desarrollado en la beca ONE, el objetivo es crear un portafolio web mientras se aprende sobre etiquetas semánticas, css responsivo y un acercamiento más completo a GitHub 
