@@ -15,29 +15,44 @@
     </header>
     <main class="presentacion">
         <div class="main">
-            <section class="encriptador_desencriptador">
-                <textarea class="campo_texto" type="text" placeholder="Ingrese el texto aquí"></textarea>
+            <section id="encriptadorDesencriptador" class="encriptador_desencriptador">
+                <textarea id="campoTexto" class="campo_texto" placeholder="Ingrese el texto aquí"></textarea>
                 <div class="alerta">
                     <img src="assets/icono-excla.png" alt="icono de exclamacion">
                     <span>Solo letras minúsculas y sin acentos</span>
                     <div class="disposicion_botones">
-                        <button class="boton_encriptar_texto">Encriptar!</button>
-                        <button class="boton_desencriptar_texto">Desencriptar!</button>
+                        <button id="botonEncriptar" class="boton_encriptar_texto">Encriptar!</button>
+                        <button id="botonDesencriptar" class="boton_desencriptar_texto">Desencriptar!</button>
                     </div>    
                 </div>
             </section>
             <section class="respuesta_encriptador_desencriptador">
-                <img class="imagen_muñeco" src="assets/Muñeco.png" alt="muñeco viendo un diamante">  
-                <p class="mensaje_final ajustar">
-                    Ningún mensaje fue encontrado
-                </p>
-                <p class="respuesta_encriptador_desencriptador_mensaje_segurencia">
+                <img id="muñeco" class="imagen_muñeco" src="assets/Muñeco.png" alt="muñeco viendo un diamante">  
+                <textarea id="mensajeFinal" class="mensaje_final" placeholder="Ningún mensaje fue encontrado">
+                </textarea>
+                <p id="mensajeInfo" class="respuesta_encriptador_desencriptador_mensaje_segurencia">
                     Ingresa el texto que desees encriptar o desencriptar.
                 </p>
-                <button class="boton_copiar oculto">Copiar</button>
+                <button id="botonCopiar" class="boton_copiar oculto">Copiar</button>
             </section>
         </div>
     </main>
-    <footer>Elaborado por José Miguel Posada</footer>
+    <footer class="footer ">
+        <p class="creador">Creado por
+            <a href="https://github.com/Joskmy" target="_blank" class="usuario">
+                José Miguel Posada
+            </a>
+        </p>
+        <div>
+            <a href="https://github.com/Joskmy" target="_blank">
+                <img class="links" src="./assets/github.png"/>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jose-miguel-posada-ortega/" target="_blank">
+                <img class="links" src="./assets/linkedin.png" />
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/encriptador.js"></script>
 </body>
 </html>

@@ -138,6 +138,16 @@ header{
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    background:  none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.mensaje_final.ajustar{
+    font-weight: 400;
+    height: 80%;
+    text-align: left;
 
 }
 
@@ -167,6 +177,16 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+.creador{
+	font-size: 18px;
+}
+.usuario{
+	color: #000;
+	font-style: italic;
+}
+.links{
+	width: 30px;
+}
 
 
 @media screen  and (max-width: 800px) {
@@ -186,11 +206,16 @@ footer {
 
     .disposicion_botones{
         justify-content: center;
+        margin-right: 20%;
     }
 
     .boton_encriptar_texto,
     .boton_desencriptar_texto{
         width: 50%;
+    }
+
+    footer {
+        font-size: 0.875rem; 
     }
 }
 
@@ -204,6 +229,10 @@ footer {
     .boton_desencriptar_texto{
         max-width: none;
         width: 100%;
+    }
+
+    footer {
+        font-size: 0.75rem; 
     }
 
 }
