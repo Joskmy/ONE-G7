@@ -1,0 +1,209 @@
+:root{
+    --color-blue: #0A3871;
+	--color-grey: #495057;
+	--color-greyDark: #343A40;
+	--color-lightBlue: #F3F5FC ;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 1px;
+	line-height: 1.3;
+	text-decoration: none;
+}
+
+
+button{
+	cursor: pointer;
+}
+
+
+body{
+    background-color: var(--color-lightBlue);
+}
+
+
+
+header{
+	width: 100%;
+}
+
+.header{
+    width: 90%; 
+    margin: auto;
+    height: auto;
+
+}
+
+.logo_alura{
+    margin-top: 40px;
+    max-height: 45px;
+	height: 100%;
+	min-height: 40px;
+} 
+
+.main{
+    width: 80.4%;
+    margin: auto 40px auto auto; 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+	min-height: calc(100vh - 80px - 56px);
+	align-items: end;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+/*Sección del encriptador*/
+
+.encriptador_desencriptador{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo_texto{
+    width: 80%;
+    font-size: 32px;
+    color: var(--color-blue);
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+
+}
+
+.campo_texto::placeholder{
+    color: var(--color-blue);
+}
+
+.disposicion_botones{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.boton_encriptar_texto,
+.boton_desencriptar_texto,
+.boton_copiar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+
+}
+
+
+.boton_encriptar_texto{
+    background-color: var(--color-blue);
+    color: #ffffff;
+}
+
+.boton_desencriptar_texto{
+    background-color: var(--color-lightBlue);
+    color: var(--color-blue);
+}
+
+/* Sección de la respuesta */
+.respuesta_encriptador_desencriptador{
+    background-color: rgb(255, 255, 255);
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+}
+
+.ajustar{
+    justify-content: space-between;
+}
+
+.respuesta_encriptador_desencriptador.ajustar{
+    height: 80%;
+}
+
+.imagen_muñeco{
+    width: 100%;
+}
+
+.mensaje_final{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.respuesta_encriptador_desencriptador_mensaje_segurencia{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.boton_copiar{
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-blue);
+}
+
+.oculto{
+    display: none;
+}
+
+footer {
+	width: 100%;
+	min-height: 56px;
+	height: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media screen  and (max-width: 800px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+
+    .respuesta_encriptador_desencriptador{
+        height: 100%;
+    }
+    .imagen_muñeco{
+        display: none;
+    }
+
+    .disposicion_botones{
+        justify-content: center;
+    }
+
+    .boton_encriptar_texto,
+    .boton_desencriptar_texto{
+        width: 50%;
+    }
+}
+
+@media screen  and (max-width: 500px) {
+
+    .main{
+        margin: auto 16px;
+    }
+
+    .boton_encriptar_texto,
+    .boton_desencriptar_texto{
+        max-width: none;
+        width: 100%;
+    }
+
+}
